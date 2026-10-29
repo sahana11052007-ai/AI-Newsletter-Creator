@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Newsletter Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h2>✦ Newsletter AI</h2>
+        <span>Smart Content Studio</span>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="tag">YOUR AI WRITING ASSISTANT</p>
+            <h1>Create newsletters<br>that <span>inspire.</span></h1>
+            <p>Turn your ideas into beautiful newsletters in seconds.</p>
+        </section>
+
+        <section class="workspace">
+
+            <div class="form-panel">
+                <h2>Create your newsletter</h2>
+                <p>Tell us what you want to write about.</p>
+
+                <label for="topic">Newsletter topic</label>
+                <textarea id="topic" placeholder="e.g. Latest AI trends in education"></textarea>
+
+                <label for="audience">Target audience</label>
+                <select id="audience">
+                    <option>College Students</option>
+                    <option>Professionals</option>
+                    <option>Business Owners</option>
+                    <option>General Readers</option>
+                </select>
+
+                <label for="tone">Writing tone</label>
+                <select id="tone">
+                    <option>Friendly</option>
+                    <option>Professional</option>
+                    <option>Informative</option>
+                    <option>Creative</option>
+                </select>
+
+                <label for="length">Newsletter length</label>
+                <select id="length">
+                    <option>Short</option>
+                    <option selected>Medium</option>
+                    <option>Long</option>
+                </select>
+
+                <button id="generateBtn" onclick="generateNewsletter()">
+                    ✨ Generate Newsletter
+                </button>
+            </div>
+
+            <div class="preview-panel">
+                <div class="preview-heading">
+                    <div>
+                        <p class="tag">YOUR CREATION</p>
+                        <h2>Newsletter Preview</h2>
+                    </div>
+                    <span class="status">● Ready</span>
+                </div>
+
+                <div id="newsletter">
+                    <div class="empty-icon">✉</div>
+                    <h2>Your next great newsletter starts here.</h2>
+                    <p>Enter a topic and click Generate Newsletter to see your content here.</p>
+                </div>
+
+                <div class="actions">
+                    <button class="secondary" onclick="copyNewsletter()">Copy Text</button>
+                    <button class="secondary" onclick="downloadNewsletter()">Download</button>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            Made with ✦ AI Newsletter Creator
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
